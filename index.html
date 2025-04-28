@@ -9,6 +9,7 @@
 		<title>Web Chef Project Page</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/addedstyles.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -30,11 +31,8 @@
 						<div class="inner">
 							<h2>Menu</h2>
 							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
+								<li><a href="index.html">Web Chef Project Page</a></li>
+								<li><a href="https://courtward.github.io/">Courtney Ward's Portfolio</a></li>
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -42,10 +40,12 @@
 
 				<!-- Banner -->
 					<section id="banner">
+						<a href="https://courtward.github.io/" class="special">Return to Courtney Ward's Portfolio</a>
 						<div class="inner">
-							<div class="logo"><span class="icon fa-gem"></span></div>
-							<h2>This is Solid State</h2>
-							<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+							
+							<h2>Web Chef Project Page</h2>
+							<p>Uncomplicate the Kitchen</p>
+							
 						</div>
 					</section>
 
@@ -55,11 +55,13 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<img src="images/WebChefLogo.png" class="image" alt="Web Chef User View" />
 									<div class="content">
-										<h2 class="major">Magna arcu feugiat</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">The Application</h2>
+										<p>A custom recipe book web application. Web Chef provides users a single place to organize and use their personal recipe collection. 
+											Users can organize their recipes into different cookbooks and meals. They can also search for recipes by ingredient. 
+											Other features include pantry, shopping list, and meal planning.</p>
+										<a href="#appfeatures" class="special">View Features</a>
 									</div>
 								</div>
 							</section>
@@ -67,23 +69,13 @@
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Tempus adipiscing</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
-
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Nullam dignissim</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">The Project</h2>
+										<p>This application was designed and developed over a three month period by a six-person team led by 
+											<a href="https://courtward.github.io/">Courtney Ward</a>. 
+											The site was created using the .NET Core MVC framework, C#, cshtml, js, bootstrap, and css. Neo4j was used for the database.
+										</p>
+										<a href="https://github.com/CourtWard/Web-Chef" class="special">View Repo</a>
 									</div>
 								</div>
 							</section>
@@ -91,36 +83,80 @@
 						<!-- Four -->
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
-									<h2 class="major">Vitae phasellus</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+									<h2 class="major" id="appfeatures">App Features</h2>
+									
+									<!-- Video Demo -->
+									<p>The video and images below showcase the various features of the Web Chef Application.</p>
+									<video controls class="inner"><source src="video/WebChefDemo.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+									<p><em>NOTE: The database server is not currently running, so live viewing of the website is not possible at this time.</em></p>
+									
+									<!-- Feature Images & Descriptions -->
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<img src="images/UserHomeScreen.png" alt="Screenshot of logged-in user home page view for Web Chef application showing user recipes and cookbooks." class="image"/>
+											<h3 class="major">User Homepage</h3>
+											<p>From the logged-in homepage, the user can see a summary of their recipes & cookbooks.</p>
+										</article>
+										<article>
+											<img src="images/RecipeList.png" alt="Screenshot of view for Web Chef application showing " class="image"/>
 											<h3 class="major">Sed feugiat lorem</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
+											<img src="images/RecipeCard.png" alt="Screenshot of view for Web Chef application showing " class="image"/>
+											<h3 class="major">Sed feugiat lorem</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Ante fermentum</h3>
+											<img src="images/CookbookView.png" alt="Screenshot of view for Web Chef application showing " class="image"/>
+											<h3 class="major">Sed feugiat lorem</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
+											<img src="images/CreateCookbook.png" alt="Screenshot of view for Web Chef application showing " class="image"/>
+											<h3 class="major">Sed feugiat lorem</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
 										</article>
+										<article>
+											<img src="images/IngredientView.png" alt="Screenshot of view for Web Chef application showing " class="image"/>
+											<h3 class="major">Sed feugiat lorem</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+										</article>
+										<article>
+											<img src="images/MealView.png" alt="Screenshot of view for Web Chef application showing " class="image"/>
+											<h3 class="major">Sed feugiat lorem</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+										</article>
+										<article>
+											<img src="images/Pantry.png" alt="Screenshot of view for Web Chef application showing " class="image"/>
+											<h3 class="major">Sed feugiat lorem</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+										</article>
+										<article>
+											<img src="images/ShoppingList.png" alt="Screenshot of view for Web Chef application showing " class="image"/>
+											<h3 class="major">Sed feugiat lorem</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+										</article>
+										<article>
+											<img src="images/MealSchedule.png" alt="Screenshot of view for Web Chef application showing " class="image"/>
+											<h3 class="major">Sed feugiat lorem</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+										</article>
+										<article>
+											<img src="images/MonthlyMealPlanner.png" alt="Screenshot of view for Web Chef application showing " class="image"/>
+											<h3 class="major">Sed feugiat lorem</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+										</article>
+										<article>
+											<img src="images/WeeklyMealPlanner.png" alt="Screenshot of view for Web Chef application showing " class="image"/>
+											<h3 class="major">Sed feugiat lorem</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+										</article>
+										
+
 									</section>
 									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
+										<li><a href="#" class="button">Return to Top</a></li>
 									</ul>
 								</div>
 							</section>
@@ -130,41 +166,12 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+								<ul class="copyright">
+									<li>&copy; <a href="https://courtward.github.io/">Courtney Ward</a> All rights reserved.</li>
+									<li><a href="https://www.linkedin.com/in/courtneymlward/" class="icon brands fa-linkedin" target="_blank"></a></li>
+									<li><a href="https://github.com/CourtWard" class="icon brands fa-github" target="_blank"></a></li>
+									<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
